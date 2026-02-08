@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be My Valentine Pls</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: pink;
+            margin: 0;
+        }
+        .heart {
+            width: 200px;
+            height: 200px;
+            background: red;
+            position: relative;
+            transform: rotate(-45deg);
+            margin: 0 1rem;
+        }
+        .heart::before,
+        .heart::after {
+            content: '';
+            width: 200px;
+            height: 200px;
+            background: red;
+            border-radius: 50%;
+            position: absolute;
+        }
+        .heart::before {
+            top: -100px;
+            left: 0;
+        }
+        .heart::after {
+            left: 100px;
+            top: 0;
+        }
+        h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 24px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="heart">
+        <h1>Be My Valentine Pls</h1>
+    </div>
+</body>
+</html>
