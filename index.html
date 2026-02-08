@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Be My Valentine Pls</title>
+    <title>Be My Valentine</title>
     <style>
         body {
             display: flex;
-            flex-direction: column; /* stack vertically */
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
@@ -21,7 +21,6 @@
             background: red;
             position: relative;
             transform: rotate(-45deg);
-            margin-bottom: 20px; /* space below heart */
         }
 
         .heart::before,
@@ -44,15 +43,23 @@
             top: 0;
         }
 
-        h1 {
-            color: white;
-            font-size: 24px;
+        .text {
+            margin-top: 40px; /* space below heart */
             text-align: center;
+            color: white;
+            font-size: 28px;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
+
     <div class="heart"></div>
-    <h1>Be My Valentine Pls</h1>
+
+    <div class="text">
+        💖<br>
+        be valentine
+    </div>
+
 </body>
 </html>
