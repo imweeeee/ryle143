@@ -7,20 +7,23 @@
     <style>
         body {
             display: flex;
+            flex-direction: column; /* stack vertically */
             justify-content: center;
             align-items: center;
             height: 100vh;
             background-color: pink;
             margin: 0;
         }
+
         .heart {
             width: 200px;
             height: 200px;
             background: red;
             position: relative;
             transform: rotate(-45deg);
-            margin: 0 1rem;
+            margin-bottom: 20px; /* space below heart */
         }
+
         .heart::before,
         .heart::after {
             content: '';
@@ -30,19 +33,18 @@
             border-radius: 50%;
             position: absolute;
         }
+
         .heart::before {
             top: -100px;
             left: 0;
         }
+
         .heart::after {
             left: 100px;
             top: 0;
         }
+
         h1 {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
             color: white;
             font-size: 24px;
             text-align: center;
@@ -50,8 +52,7 @@
     </style>
 </head>
 <body>
-    <div class="heart">
-        <h1>Be My Valentine Pls</h1>
-    </div>
+    <div class="heart"></div>
+    <h1>Be My Valentine Pls</h1>
 </body>
 </html>
